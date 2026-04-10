@@ -1,0 +1,67 @@
+{
+  "name": "@prastavna/icons",
+  "version": "0.0.0",
+  "description": "SVG icon library for music score notation",
+  "homepage": "https://github.com/author/library#readme",
+  "bugs": {
+    "url": "https://github.com/author/library/issues"
+  },
+  "license": "MIT",
+  "author": "Author Name <author.name@mail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/author/library.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./notes": "./dist/icons/notes/index.mjs",
+    "./rests": "./dist/icons/rests/index.mjs",
+    "./clefs": "./dist/icons/clefs/index.mjs",
+    "./accidentals": "./dist/icons/accidentals/index.mjs",
+    "./time-signatures": "./dist/icons/time-signatures/index.mjs",
+    "./dynamics": "./dist/icons/dynamics/index.mjs",
+    "./articulations": "./dist/icons/articulations/index.mjs",
+    "./ornaments": "./dist/icons/ornaments/index.mjs",
+    "./repeats": "./dist/icons/repeats/index.mjs",
+    "./barlines": "./dist/icons/barlines/index.mjs",
+    "./beams": "./dist/icons/beams/index.mjs",
+    "./ties": "./dist/icons/ties/index.mjs",
+    "./slurs": "./dist/icons/slurs/index.mjs",
+    "./pedals": "./dist/icons/pedals/index.mjs",
+    "./bows": "./dist/icons/bows/index.mjs",
+    "./misc": "./dist/icons/misc/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "vp pack",
+    "dev": "vp pack --watch",
+    "test": "vp test",
+    "check": "vp check",
+    "prepublishOnly": "vp run build",
+    "prepare": "vp config",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@typescript/native-preview": "7.0.0-dev.20260328.1",
+    "bumpp": "^11.0.1",
+    "oxc-minify": "^0.124.0",
+    "typescript": "^6.0.2",
+    "vite-plus": "^0.1.14",
+    "vitepress": "^2.0.0-alpha.17"
+  },
+  "overrides": {
+    "vite": "npm:@voidzero-dev/vite-plus-core@latest",
+    "vitest": "npm:@voidzero-dev/vite-plus-test@latest"
+  },
+  "packageManager": "bun@1.3.11"
+}
