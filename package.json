@@ -2,15 +2,15 @@
   "name": "@prastavna/icons",
   "version": "0.0.0",
   "description": "SVG icon library for music score notation",
-  "homepage": "https://github.com/author/library#readme",
+  "homepage": "https://github.com/prastavna/icons#readme",
   "bugs": {
-    "url": "https://github.com/author/library/issues"
+    "url": "https://github.com/prastavna/icons/issues"
   },
   "license": "MIT",
-  "author": "Author Name <author.name@mail.com>",
+  "author": "hello@prastavna.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/author/library.git"
+    "url": "git@github.com:Prastavna/icons.git"
   },
   "files": [
     "dist"
