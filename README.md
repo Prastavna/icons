@@ -2,7 +2,7 @@
 
 Framework-agnostic SVG icon library for music score notation.
 
-148 icons across 16 categories — each available in outline and filled variants. Every icon is a callable function returning an SVG string, with metadata properties for introspection and tree-shakeable subpath exports per category.
+285 icons across 34 categories — each available in outline and filled variants. Every icon is a callable function returning an SVG string, with metadata properties for introspection and tree-shakeable subpath exports per category.
 
 ## Install
 
@@ -94,26 +94,51 @@ interface IconFunction {
 
 ## Icon Categories
 
-| Category        | Subpath                            | Icons (per variant) | Examples                                                                                                          |
-| --------------- | ---------------------------------- | ------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| Notes           | `@prastavna/icons/notes`           | 9                   | `whole`, `half`, `quarter`, `eighth`, `sixteenth`, `thirtySecond`, `dottedHalf`, `dottedQuarter`, `dottedEighth`  |
-| Rests           | `@prastavna/icons/rests`           | 6                   | `whole`, `half`, `quarter`, `eighth`, `sixteenth`, `thirtySecond`                                                 |
-| Clefs           | `@prastavna/icons/clefs`           | 4                   | `treble`, `bass`, `alto`, `tenor`                                                                                 |
-| Accidentals     | `@prastavna/icons/accidentals`     | 5                   | `sharp`, `flat`, `natural`, `doubleSharp`, `doubleFlat`                                                           |
-| Time Signatures | `@prastavna/icons/time-signatures` | 7                   | `common`, `cut`, `fourFour`, `threeFour`, `sixEight`, `twoFour`, `twoTwo`                                         |
-| Dynamics        | `@prastavna/icons/dynamics`        | 9                   | `piano`, `forte`, `mezzoForte`, `mezzoPiano`, `fortissimo`, `pianissimo`, `crescendo`, `decrescendo`, `sforzando` |
-| Articulations   | `@prastavna/icons/articulations`   | 6                   | `staccato`, `accent`, `tenuto`, `fermata`, `marcato`, `staccatissimo`                                             |
-| Ornaments       | `@prastavna/icons/ornaments`       | 5                   | `trill`, `mordent`, `turn`, `tremolo`, `graceNote`                                                                |
-| Repeats         | `@prastavna/icons/repeats`         | 6                   | `bar`, `sign`, `segno`, `coda`, `dalSegno`, `daCapo`                                                              |
-| Barlines        | `@prastavna/icons/barlines`        | 5                   | `single`, `double`, `final`, `repeatStart`, `repeatEnd`                                                           |
-| Beams           | `@prastavna/icons/beams`           | 3                   | `single`, `double`, `triple`                                                                                      |
-| Ties            | `@prastavna/icons/ties`            | 2                   | `above`, `below`                                                                                                  |
-| Slurs           | `@prastavna/icons/slurs`           | 2                   | `above`, `below`                                                                                                  |
-| Pedals          | `@prastavna/icons/pedals`          | 2                   | `down`, `up`                                                                                                      |
-| Bows            | `@prastavna/icons/bows`            | 2                   | `up`, `down`                                                                                                      |
-| Misc            | `@prastavna/icons/misc`            | 6                   | `metronome`, `tuningFork`, `staff`, `ledgerLine`, `brace`, `bracket`                                              |
+### Music Notation (19 categories)
 
-Each category has outline + filled variants, so the per-variant count doubles for total exports. Root imports use category-prefixed names (e.g. `noteQuarter`, `clefTreble`); subpath imports use short names (e.g. `quarter`, `treble`).
+| Category          | Subpath                              | Icons (per variant) | Examples                                                                                                          |
+| ----------------- | ------------------------------------ | ------------------- | ----------------------------------------------------------------------------------------------------------------- |
+| Notes             | `@prastavna/icons/notes`             | 9                   | `whole`, `half`, `quarter`, `eighth`, `sixteenth`, `thirtySecond`, `dottedHalf`, `dottedQuarter`, `dottedEighth`  |
+| Rests             | `@prastavna/icons/rests`             | 6                   | `whole`, `half`, `quarter`, `eighth`, `sixteenth`, `thirtySecond`                                                 |
+| Clefs             | `@prastavna/icons/clefs`             | 4                   | `treble`, `bass`, `alto`, `tenor`                                                                                 |
+| Accidentals       | `@prastavna/icons/accidentals`       | 5                   | `sharp`, `flat`, `natural`, `doubleSharp`, `doubleFlat`                                                           |
+| Time Signatures   | `@prastavna/icons/time-signatures`   | 7                   | `common`, `cut`, `fourFour`, `threeFour`, `sixEight`, `twoFour`, `twoTwo`                                         |
+| Dynamics          | `@prastavna/icons/dynamics`          | 9                   | `piano`, `forte`, `mezzoForte`, `mezzoPiano`, `fortissimo`, `pianissimo`, `crescendo`, `decrescendo`, `sforzando` |
+| Articulations     | `@prastavna/icons/articulations`     | 6                   | `staccato`, `accent`, `tenuto`, `fermata`, `marcato`, `staccatissimo`                                             |
+| Ornaments         | `@prastavna/icons/ornaments`         | 5                   | `trill`, `mordent`, `turn`, `tremolo`, `graceNote`                                                                |
+| Repeats           | `@prastavna/icons/repeats`           | 6                   | `bar`, `sign`, `segno`, `coda`, `dalSegno`, `daCapo`                                                              |
+| Barlines          | `@prastavna/icons/barlines`          | 5                   | `single`, `double`, `final`, `repeatStart`, `repeatEnd`                                                           |
+| Beams             | `@prastavna/icons/beams`             | 3                   | `single`, `double`, `triple`                                                                                      |
+| Ties              | `@prastavna/icons/ties`              | 2                   | `above`, `below`                                                                                                  |
+| Slurs             | `@prastavna/icons/slurs`             | 2                   | `above`, `below`                                                                                                  |
+| Pedals            | `@prastavna/icons/pedals`            | 2                   | `down`, `up`                                                                                                      |
+| Bows              | `@prastavna/icons/bows`              | 2                   | `up`, `down`                                                                                                      |
+| Misc              | `@prastavna/icons/misc`              | 6                   | `metronome`, `tuningFork`, `staff`, `ledgerLine`, `brace`, `bracket`                                              |
+| Notation Extended | `@prastavna/icons/notation-extended` | 12                  | `breathMark`, `caesura`, `glissando`, `arpeggio`, `portamento`, `vibrato`, `harmonics`, `snapPizzicato`           |
+| Instruments       | `@prastavna/icons/instruments`       | 10                  | `guitar`, `piano`, `violin`, `drum`, `trumpet`, `saxophone`, `flute`, `harp`, `drumKit`, `accordion`              |
+| Player            | `@prastavna/icons/player`            | 12                  | `play`, `pause`, `stop`, `skipForward`, `skipBack`, `shuffle`, `repeat`, `repeatOnce`, `volume`, `volumeMute`     |
+
+### Generic UI (15 categories) — Sourced from Lucide (https://lucide.dev — MIT License)
+
+| Category      | Subpath                          | Icons (per variant) | Examples                                                                                               |
+| ------------- | -------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------ |
+| Arrows        | `@prastavna/icons/arrows`        | 26                  | `arrowRight`, `arrowLeft`, `arrowUp`, `arrowDown`, `chevronRight`, `chevronLeft`, `rotateCw`, `expand` |
+| Navigation    | `@prastavna/icons/navigation`    | 10                  | `home`, `menu`, `grid`, `list`, `sidebar`, `externalLink`, `anchor`, `compass`                         |
+| Actions       | `@prastavna/icons/actions`       | 18                  | `edit`, `trash`, `copy`, `save`, `share`, `upload`, `download`, `search`, `plus`, `check`              |
+| Files         | `@prastavna/icons/files`         | 10                  | `file`, `folder`, `folderOpen`, `image`, `video`, `audio`, `fileText`, `fileCode`                      |
+| Communication | `@prastavna/icons/communication` | 10                  | `mail`, `bell`, `bellOff`, `user`, `users`, `phone`, `messageCircle`, `messageSquare`                  |
+| UI            | `@prastavna/icons/ui`            | 16                  | `settings`, `eye`, `eyeOff`, `lock`, `unlock`, `star`, `heart`, `bookmark`, `flag`, `tag`              |
+| Shapes        | `@prastavna/icons/shapes`        | 8                   | `circle`, `square`, `triangle`, `diamond`, `hexagon`, `octagon`, `star`, `pentagon`                    |
+| Media         | `@prastavna/icons/media`         | 10                  | `camera`, `mic`, `micOff`, `speaker`, `monitor`, `tv`, `headphones`, `radio`                           |
+| Data          | `@prastavna/icons/data`          | 10                  | `barChart`, `lineChart`, `pieChart`, `table`, `database`, `server`, `activity`, `trendingUp`           |
+| Time          | `@prastavna/icons/time`          | 6                   | `clock`, `calendar`, `timer`, `hourglass`, `alarm`, `calendarDays`                                     |
+| Weather       | `@prastavna/icons/weather`       | 8                   | `sun`, `moon`, `cloud`, `cloudRain`, `cloudSnow`, `wind`, `lightning`, `snowflake`                     |
+| Maps          | `@prastavna/icons/maps`          | 5                   | `mapPin`, `map`, `globe`, `navigation`, `route`                                                        |
+| Social        | `@prastavna/icons/social`        | 7                   | `link`, `link2`, `rss`, `qrCode`, `share2`, `thumbsUp`, `thumbsDown`                                   |
+| Dev           | `@prastavna/icons/dev`           | 10                  | `code`, `terminal`, `bug`, `pkg`, `gitCommit`, `gitMerge`, `gitPullRequest`, `brackets`                |
+| Commerce      | `@prastavna/icons/commerce`      | 8                   | `shoppingCart`, `shoppingBag`, `creditCard`, `receipt`, `wallet`, `dollarSign`, `percent`, `gift`      |
+
+Each category has outline + filled variants. Root imports use category-prefixed names (e.g. `noteQuarter`, `clefTreble`); subpath imports use short names (e.g. `quarter`, `treble`).
 
 ## Full Icon List
 
@@ -410,6 +435,10 @@ Each category has outline + filled variants, so the per-variant count doubles fo
 - **Filled** icons use filled paths. Color maps to `fill`. `strokeWidth` has no effect.
 - All icons are self-contained `<svg>` elements with no external dependencies.
 - Color defaults to `currentColor`, inheriting from CSS.
+
+## Attribution
+
+Generic UI icons (Arrows, Navigation, Actions, Files, Communication, UI, Shapes, Media, Data, Time, Weather, Maps, Social, Dev, Commerce categories) have SVG paths sourced from [Lucide](https://lucide.dev) — MIT License.
 
 ## License
 
