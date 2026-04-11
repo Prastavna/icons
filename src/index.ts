@@ -372,6 +372,16 @@ export {
   moreHorizontalFilled as navigationMoreHorizontalFilled,
   moreVertical as navigationMoreVertical,
   moreVerticalFilled as navigationMoreVerticalFilled,
+  panelLeft as navigationPanelLeft,
+  panelLeftFilled as navigationPanelLeftFilled,
+  panelRight as navigationPanelRight,
+  panelRightFilled as navigationPanelRightFilled,
+  panelBottom as navigationPanelBottom,
+  panelBottomFilled as navigationPanelBottomFilled,
+  columns as navigationColumns,
+  columnsFilled as navigationColumnsFilled,
+  rows as navigationRows,
+  rowsFilled as navigationRowsFilled,
 } from "./icons/navigation/index.ts";
 
 // Generic — Actions
@@ -416,6 +426,24 @@ export {
   pinFilled as actionPinFilled,
   send as actionSend,
   sendFilled as actionSendFilled,
+  undo as actionUndo,
+  undoFilled as actionUndoFilled,
+  redo as actionRedo,
+  redoFilled as actionRedoFilled,
+  cut as actionCut,
+  cutFilled as actionCutFilled,
+  paste as actionPaste,
+  pasteFilled as actionPasteFilled,
+  bookmark as actionBookmark,
+  bookmarkFilled as actionBookmarkFilled,
+  star as actionStar,
+  starFilled as actionStarFilled,
+  heart as actionHeart,
+  heartFilled as actionHeartFilled,
+  link as actionLink,
+  linkFilled as actionLinkFilled,
+  unlink as actionUnlink,
+  unlinkFilled as actionUnlinkFilled,
 } from "./icons/actions/index.ts";
 
 // Generic — Files
@@ -464,6 +492,18 @@ export {
   inboxFilled as communicationInboxFilled,
   atSign as communicationAtSign,
   atSignFilled as communicationAtSignFilled,
+  mailOpen as communicationMailOpen,
+  mailOpenFilled as communicationMailOpenFilled,
+  contact as communicationContact,
+  contactFilled as communicationContactFilled,
+  phoneOff as communicationPhoneOff,
+  phoneOffFilled as communicationPhoneOffFilled,
+  userPlus as communicationUserPlus,
+  userPlusFilled as communicationUserPlusFilled,
+  userMinus as communicationUserMinus,
+  userMinusFilled as communicationUserMinusFilled,
+  voicemail as communicationVoicemail,
+  voicemailFilled as communicationVoicemailFilled,
 } from "./icons/communication/index.ts";
 
 // Generic — UI
@@ -502,6 +542,14 @@ export {
   helpCircleFilled as uiHelpCircleFilled,
   loader as uiLoader,
   loaderFilled as uiLoaderFilled,
+  toggle as uiToggle,
+  toggleFilled as uiToggleFilled,
+  toggleOff as uiToggleOff,
+  toggleOffFilled as uiToggleOffFilled,
+  slider as uiSlider,
+  sliderFilled as uiSliderFilled,
+  tooltip as uiTooltip,
+  tooltipFilled as uiTooltipFilled,
 } from "./icons/ui/index.ts";
 
 // Generic — Shapes
@@ -662,6 +710,14 @@ export {
   curlyBracesFilled as devCurlyBracesFilled,
   cpu as devCpu,
   cpuFilled as devCpuFilled,
+  cloud as devCloud,
+  cloudFilled as devCloudFilled,
+  wifi as devWifi,
+  wifiFilled as devWifiFilled,
+  wifiOff as devWifiOff,
+  wifiOffFilled as devWifiOffFilled,
+  webhook as devWebhook,
+  webhookFilled as devWebhookFilled,
 } from "./icons/dev/index.ts";
 
 // Generic — Commerce

@@ -150,3 +150,93 @@ export const atSignFilled = createIcon({
   variant: "filled",
   svgContent: `<circle ${S} cx="12" cy="12" r="4"/><path ${S} d="M16 8v5a3 3 0 0 0 6 0v-1a10 10 0 1 0-3.92 7.94"/>`,
 });
+
+export const mailOpen = createIcon({
+  name: "mail-open",
+  category: "communication",
+  variant: "outline",
+  svgContent:
+    '<path d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6z"/><path d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/>',
+});
+
+export const mailOpenFilled = createIcon({
+  name: "mail-open-filled",
+  category: "communication",
+  variant: "filled",
+  svgContent: `<path ${S} d="M21.2 8.4c.5.38.8.97.8 1.6v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V10a2 2 0 0 1 .8-1.6l8-6a2 2 0 0 1 2.4 0l8 6z"/><path ${S} d="m22 10-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 10"/>`,
+});
+
+export const contact = createIcon({
+  name: "contact",
+  category: "communication",
+  variant: "outline",
+  svgContent:
+    '<path d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"/><rect width="18" height="18" x="3" y="4" rx="2"/><circle cx="12" cy="10" r="2"/><line x1="8" x2="8" y1="2" y2="4"/><line x1="16" x2="16" y1="2" y2="4"/>',
+});
+
+export const contactFilled = createIcon({
+  name: "contact-filled",
+  category: "communication",
+  variant: "filled",
+  svgContent: `<path ${S} d="M17 18a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2"/><rect ${S} width="18" height="18" x="3" y="4" rx="2"/><circle ${S} cx="12" cy="10" r="2"/><line ${S} x1="8" x2="8" y1="2" y2="4"/><line ${S} x1="16" x2="16" y1="2" y2="4"/>`,
+});
+
+export const phoneOff = createIcon({
+  name: "phone-off",
+  category: "communication",
+  variant: "outline",
+  svgContent:
+    '<path d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07"/><path d="M14.5 2.09a9.94 9.94 0 0 1 7.41 7.41"/><path d="M2 2l20 20"/><path d="M6.09 6.09a10 10 0 0 0-3 5.18 2 2 0 0 0 1.72 2.29h.08a2 2 0 0 1 2.11.45l1.27 1.27"/>',
+});
+
+export const phoneOffFilled = createIcon({
+  name: "phone-off-filled",
+  category: "communication",
+  variant: "filled",
+  svgContent: `<path ${S} d="M10.68 13.31a16 16 0 0 0 3.41 2.6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 1.72 2v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07"/><path ${S} d="M14.5 2.09a9.94 9.94 0 0 1 7.41 7.41"/><path ${S} d="M2 2l20 20"/><path ${S} d="M6.09 6.09a10 10 0 0 0-3 5.18 2 2 0 0 0 1.72 2.29h.08a2 2 0 0 1 2.11.45l1.27 1.27"/>`,
+});
+
+export const userPlus = createIcon({
+  name: "user-plus",
+  category: "communication",
+  variant: "outline",
+  svgContent:
+    '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/>',
+});
+
+export const userPlusFilled = createIcon({
+  name: "user-plus-filled",
+  category: "communication",
+  variant: "filled",
+  svgContent: `<path ${S} d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle ${S} cx="9" cy="7" r="4"/><line ${S} x1="19" x2="19" y1="8" y2="14"/><line ${S} x1="22" x2="16" y1="11" y2="11"/>`,
+});
+
+export const userMinus = createIcon({
+  name: "user-minus",
+  category: "communication",
+  variant: "outline",
+  svgContent:
+    '<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="22" x2="16" y1="11" y2="11"/>',
+});
+
+export const userMinusFilled = createIcon({
+  name: "user-minus-filled",
+  category: "communication",
+  variant: "filled",
+  svgContent: `<path ${S} d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle ${S} cx="9" cy="7" r="4"/><line ${S} x1="22" x2="16" y1="11" y2="11"/>`,
+});
+
+export const voicemail = createIcon({
+  name: "voicemail",
+  category: "communication",
+  variant: "outline",
+  svgContent:
+    '<circle cx="6" cy="12" r="4"/><circle cx="18" cy="12" r="4"/><line x1="6" x2="18" y1="16" y2="16"/>',
+});
+
+export const voicemailFilled = createIcon({
+  name: "voicemail-filled",
+  category: "communication",
+  variant: "filled",
+  svgContent: `<circle ${S} cx="6" cy="12" r="4"/><circle ${S} cx="18" cy="12" r="4"/><line ${S} x1="6" x2="18" y1="16" y2="16"/>`,
+});

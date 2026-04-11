@@ -153,3 +153,73 @@ export const moreVerticalFilled = createIcon({
   variant: "filled",
   svgContent: `<circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/>`,
 });
+
+export const panelLeft = createIcon({
+  name: "navigation-panel-left",
+  category: "navigation",
+  variant: "outline",
+  svgContent: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M9 3v18"/>',
+});
+
+export const panelLeftFilled = createIcon({
+  name: "navigation-panel-left-filled",
+  category: "navigation",
+  variant: "filled",
+  svgContent: `<rect ${S} width="18" height="18" x="3" y="3" rx="2" ry="2"/><path ${S} d="M9 3v18"/>`,
+});
+
+export const panelRight = createIcon({
+  name: "navigation-panel-right",
+  category: "navigation",
+  variant: "outline",
+  svgContent: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M15 3v18"/>',
+});
+
+export const panelRightFilled = createIcon({
+  name: "navigation-panel-right-filled",
+  category: "navigation",
+  variant: "filled",
+  svgContent: `<rect ${S} width="18" height="18" x="3" y="3" rx="2" ry="2"/><path ${S} d="M15 3v18"/>`,
+});
+
+export const panelBottom = createIcon({
+  name: "navigation-panel-bottom",
+  category: "navigation",
+  variant: "outline",
+  svgContent: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M3 15h18"/>',
+});
+
+export const panelBottomFilled = createIcon({
+  name: "navigation-panel-bottom-filled",
+  category: "navigation",
+  variant: "filled",
+  svgContent: `<rect ${S} width="18" height="18" x="3" y="3" rx="2" ry="2"/><path ${S} d="M3 15h18"/>`,
+});
+
+export const columns = createIcon({
+  name: "navigation-columns",
+  category: "navigation",
+  variant: "outline",
+  svgContent: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M12 3v18"/>',
+});
+
+export const columnsFilled = createIcon({
+  name: "navigation-columns-filled",
+  category: "navigation",
+  variant: "filled",
+  svgContent: `<rect ${S} width="18" height="18" x="3" y="3" rx="2" ry="2"/><path ${S} d="M12 3v18"/>`,
+});
+
+export const rows = createIcon({
+  name: "navigation-rows",
+  category: "navigation",
+  variant: "outline",
+  svgContent: '<rect width="18" height="18" x="3" y="3" rx="2" ry="2"/><path d="M3 12h18"/>',
+});
+
+export const rowsFilled = createIcon({
+  name: "navigation-rows-filled",
+  category: "navigation",
+  variant: "filled",
+  svgContent: `<rect ${S} width="18" height="18" x="3" y="3" rx="2" ry="2"/><path ${S} d="M3 12h18"/>`,
+});

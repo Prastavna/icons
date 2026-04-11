@@ -254,3 +254,63 @@ export const loaderFilled = createIcon({
   variant: "filled",
   svgContent: `<line ${S} x1="12" x2="12" y1="2" y2="6"/><line ${S} x1="12" x2="12" y1="18" y2="22"/><line ${S} x1="4.93" x2="7.76" y1="4.93" y2="7.76"/><line ${S} x1="16.24" x2="19.07" y1="16.24" y2="19.07"/><line ${S} x1="2" x2="6" y1="12" y2="12"/><line ${S} x1="18" x2="22" y1="12" y2="12"/><line ${S} x1="4.93" x2="7.76" y1="19.07" y2="16.24"/><line ${S} x1="16.24" x2="19.07" y1="7.76" y2="4.93"/>`,
 });
+
+export const toggle = createIcon({
+  name: "toggle",
+  category: "ui",
+  variant: "outline",
+  svgContent:
+    '<rect width="20" height="12" x="2" y="6" rx="6" ry="6"/><circle cx="16" cy="12" r="3" fill="currentColor"/>',
+});
+
+export const toggleFilled = createIcon({
+  name: "toggle-filled",
+  category: "ui",
+  variant: "filled",
+  svgContent: `<rect ${S} width="20" height="12" x="2" y="6" rx="6" ry="6"/><circle cx="16" cy="12" r="3" fill="currentColor"/>`,
+});
+
+export const toggleOff = createIcon({
+  name: "toggle-off",
+  category: "ui",
+  variant: "outline",
+  svgContent:
+    '<rect width="20" height="12" x="2" y="6" rx="6" ry="6"/><circle cx="8" cy="12" r="3" fill="currentColor"/>',
+});
+
+export const toggleOffFilled = createIcon({
+  name: "toggle-off-filled",
+  category: "ui",
+  variant: "filled",
+  svgContent: `<rect ${S} width="20" height="12" x="2" y="6" rx="6" ry="6"/><circle cx="8" cy="12" r="3" fill="currentColor"/>`,
+});
+
+export const slider = createIcon({
+  name: "slider",
+  category: "ui",
+  variant: "outline",
+  svgContent:
+    '<line x1="21" x2="14" y1="4" y2="4"/><line x1="10" x2="3" y1="4" y2="4"/><line x1="21" x2="12" y1="12" y2="12"/><line x1="8" x2="3" y1="12" y2="12"/><line x1="21" x2="16" y1="20" y2="20"/><line x1="12" x2="3" y1="20" y2="20"/><circle cx="12" cy="4" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="14" cy="20" r="2"/>',
+});
+
+export const sliderFilled = createIcon({
+  name: "slider-filled",
+  category: "ui",
+  variant: "filled",
+  svgContent: `<line ${S} x1="21" x2="14" y1="4" y2="4"/><line ${S} x1="10" x2="3" y1="4" y2="4"/><line ${S} x1="21" x2="12" y1="12" y2="12"/><line ${S} x1="8" x2="3" y1="12" y2="12"/><line ${S} x1="21" x2="16" y1="20" y2="20"/><line ${S} x1="12" x2="3" y1="20" y2="20"/><circle ${S} cx="12" cy="4" r="2"/><circle ${S} cx="10" cy="12" r="2"/><circle ${S} cx="14" cy="20" r="2"/>`,
+});
+
+export const tooltip = createIcon({
+  name: "tooltip",
+  category: "ui",
+  variant: "outline",
+  svgContent:
+    '<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M12 7v2"/><path d="M12 11v.01"/>',
+});
+
+export const tooltipFilled = createIcon({
+  name: "tooltip-filled",
+  category: "ui",
+  variant: "filled",
+  svgContent: `<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path ${S} d="M12 7v2"/><path ${S} d="M12 11v.01"/>`,
+});
