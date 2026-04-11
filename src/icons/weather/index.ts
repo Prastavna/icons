@@ -30,7 +30,7 @@ export const moonFilled = createIcon({
   name: "moon-filled",
   category: "weather",
   variant: "filled",
-  svgContent: `<path ${S} d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>`,
+  svgContent: `<path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>`,
 });
 
 export const cloud = createIcon({
@@ -44,7 +44,7 @@ export const cloudFilled = createIcon({
   name: "cloud-filled",
   category: "weather",
   variant: "filled",
-  svgContent: `<path ${S} d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>`,
+  svgContent: `<path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"/>`,
 });
 
 export const cloudRain = createIcon({

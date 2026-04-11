@@ -85,7 +85,7 @@ describe("root barrel export", () => {
   });
 
   test("all exports are callable functions", () => {
-    for (const [key, value] of Object.entries(icons)) {
+    for (const [, value] of Object.entries(icons)) {
       if (typeof value === "function") {
         const svg = (value as () => string)();
         expect(svg).toMatch(/^<svg /);

@@ -90,7 +90,7 @@ export const phoneFilled = createIcon({
   name: "phone-filled",
   category: "communication",
   variant: "filled",
-  svgContent: `<path ${S} d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15.29a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 5.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 12.14a16 16 0 0 0 5.77 5.77l1.09-1.09a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`,
+  svgContent: `<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 15.29a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.92 5.27h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 12.14a16 16 0 0 0 5.77 5.77l1.09-1.09a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>`,
 });
 
 export const messageCircle = createIcon({
@@ -104,7 +104,7 @@ export const messageCircleFilled = createIcon({
   name: "message-circle-filled",
   category: "communication",
   variant: "filled",
-  svgContent: `<path ${S} d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/>`,
+  svgContent: `<path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z"/>`,
 });
 
 export const messageSquare = createIcon({
@@ -118,7 +118,7 @@ export const messageSquareFilled = createIcon({
   name: "message-square-filled",
   category: "communication",
   variant: "filled",
-  svgContent: `<path ${S} d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>`,
+  svgContent: `<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>`,
 });
 
 export const inbox = createIcon({

@@ -46,7 +46,7 @@ export const gridFilled = createIcon({
   name: "navigation-grid-filled",
   category: "navigation",
   variant: "filled",
-  svgContent: `<rect ${S} width="7" height="7" x="3" y="3" rx="1"/><rect ${S} width="7" height="7" x="14" y="3" rx="1"/><rect ${S} width="7" height="7" x="14" y="14" rx="1"/><rect ${S} width="7" height="7" x="3" y="14" rx="1"/>`,
+  svgContent: `<rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/>`,
 });
 
 export const list = createIcon({
@@ -121,7 +121,7 @@ export const compassFilled = createIcon({
   name: "navigation-compass-filled",
   category: "navigation",
   variant: "filled",
-  svgContent: `<circle ${S} cx="12" cy="12" r="10"/><polygon ${S} points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>`,
+  svgContent: `<circle cx="12" cy="12" r="10"/><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"/>`,
 });
 
 export const moreHorizontal = createIcon({
@@ -136,7 +136,7 @@ export const moreHorizontalFilled = createIcon({
   name: "navigation-more-horizontal-filled",
   category: "navigation",
   variant: "filled",
-  svgContent: `<circle ${S} cx="12" cy="12" r="1"/><circle ${S} cx="19" cy="12" r="1"/><circle ${S} cx="5" cy="12" r="1"/>`,
+  svgContent: `<circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/><circle cx="5" cy="12" r="1"/>`,
 });
 
 export const moreVertical = createIcon({
@@ -151,5 +151,5 @@ export const moreVerticalFilled = createIcon({
   name: "navigation-more-vertical-filled",
   category: "navigation",
   variant: "filled",
-  svgContent: `<circle ${S} cx="12" cy="12" r="1"/><circle ${S} cx="12" cy="5" r="1"/><circle ${S} cx="12" cy="19" r="1"/>`,
+  svgContent: `<circle cx="12" cy="12" r="1"/><circle cx="12" cy="5" r="1"/><circle cx="12" cy="19" r="1"/>`,
 });

@@ -31,7 +31,7 @@ export const folderFilled = createIcon({
   name: "folder-filled",
   category: "file",
   variant: "filled",
-  svgContent: `<path ${S} d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>`,
+  svgContent: `<path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/>`,
 });
 
 export const folderOpen = createIcon({
@@ -76,7 +76,7 @@ export const videoFilled = createIcon({
   name: "video-filled",
   category: "file",
   variant: "filled",
-  svgContent: `<path ${S} d="m22 8-6 4 6 4V8z"/><rect ${S} width="14" height="12" x="2" y="6" rx="2" ry="2"/>`,
+  svgContent: `<path d="m22 8-6 4 6 4V8z"/><rect width="14" height="12" x="2" y="6" rx="2" ry="2"/>`,
 });
 
 export const audio = createIcon({
