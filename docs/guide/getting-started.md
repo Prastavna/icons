@@ -1,6 +1,6 @@
 # Getting Started
 
-`@prastavna/icons` exports music notation symbols as plain SVG strings.
+`@prastavna/icons` exports icons as plain SVG strings.
 
 ## Install
 

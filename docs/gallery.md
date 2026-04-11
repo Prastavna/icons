@@ -93,6 +93,7 @@ const categories = [
 ]
 
 const query = ref('')
+const copiedIconKey = ref('')
 
 function formatLabel(value: string): string {
   return value
@@ -154,6 +155,21 @@ const totalIcons = sections.reduce((count, section) => count + section.icons.len
 const filteredIconCount = computed(() =>
   filteredSections.value.reduce((count, section) => count + section.icons.length, 0),
 )
+
+async function copyIconName(name: string) {
+  if (typeof navigator === 'undefined' || !navigator.clipboard) {
+    return
+  }
+
+  await navigator.clipboard.writeText(name)
+  copiedIconKey.value = name
+
+  window.setTimeout(() => {
+    if (copiedIconKey.value === name) {
+      copiedIconKey.value = ''
+    }
+  }, 1500)
+}
 </script>
 
 <p class="muted">
@@ -182,9 +198,20 @@ const filteredIconCount = computed(() =>
     </p>
     <div class="icon-category-grid">
       <article v-for="icon in section.icons" :key="icon.key" class="icon-card">
-        <header>
-          <h3>{{ icon.label }}</h3>
-          <code>{{ icon.key }}</code>
+        <header class="icon-card-header">
+          <div>
+            <h3>{{ icon.label }}</h3>
+            <code>{{ icon.key }}</code>
+          </div>
+          <button
+            type="button"
+            class="copy-icon-button"
+            :aria-label="`Copy ${icon.key}`"
+            :title="copiedIconKey === icon.key ? 'Copied' : `Copy ${icon.key}`"
+            @click="copyIconName(icon.key)"
+          >
+            <span v-html="actions.copy({ size: 16, 'aria-hidden': 'true' })" />
+          </button>
         </header>
         <div class="icon-preview-row">
           <div class="icon-preview">
@@ -257,9 +284,46 @@ const filteredIconCount = computed(() =>
   margin-bottom: 1rem;
 }
 
+.icon-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
 .icon-card h3 {
   margin: 0 0 0.35rem;
   font-size: 1rem;
+}
+
+.copy-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  background: var(--vp-c-bg);
+  color: var(--vp-c-text-2);
+  flex-shrink: 0;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.copy-icon-button:hover,
+.copy-icon-button:focus-visible {
+  color: var(--vp-c-brand-1);
+  border-color: var(--vp-c-brand-1);
+}
+
+.copy-icon-button:focus-visible {
+  outline: 2px solid var(--vp-c-brand-1);
+  outline-offset: 2px;
+}
+
+.copy-icon-button :deep(svg) {
+  display: block;
 }
 
 .icon-preview-row {
